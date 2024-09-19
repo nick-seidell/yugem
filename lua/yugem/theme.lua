@@ -17,9 +17,13 @@ function M.get(config)
       or styles.background
 
   theme = {
+
+    -- MiniIndentscope
     MiniIndentscopeSymbol = { fg = p.color500 },
     MiniIndentscopeSymbolOff = { fg = p.color500 },
     MiniIndentscopePrefix = { nocombine = true },
+
+    -- BufferLine
     BufferLineDuplicateSelected = { fg = p.color600, bg = p.color700, style = 'italic' },
     BufferLineHintSelected = { fg = p.color100, bg = p.color700, style = 'italic' },
     BufferLineInfoSelected = { fg = p.color100, bg = p.color700, style = 'italic' },
@@ -46,12 +50,7 @@ function M.get(config)
     BufferLineMiniIconsYellowSelected = { fg = p.warning, bg = p.color700 },
     BufferLineMiniIconsGreen = { fg = p.color600, bg = p.color800 },
     BufferLineMiniIconsYellow = { fg = p.color600, bg = p.color800 },
-    --IblIndent = { fg = p.color600 },
-    --IblScope = { fg = p.yellow },
-    --IndentBlanklineContextChar = { link = 'IblScope' },
-    --IndentBlanklineChar = { link = 'IblIndent'},
-    --IndentBlanklineSpaceChar IndentBlanklineChar
-    --IndentBlanklineSpaceCharBlankline IndentBlanklineChar
+
     ColorColumn = { bg = p.blueGray1 },
     Conceal = { bg = p.none },
     CurSearch = { link = 'IncSearch' },
@@ -218,28 +217,6 @@ function M.get(config)
     ['@type.builtin'] = { link = 'Type' },
     TSURI = { fg = groups.link },
 
-    -- tsx
-    --['@keyword.export.tsx'] = { fg = p.color400 },
-    --['@keyword.import.tsx'] = { fg = p.color400 },
-    --['@import.identifier.tsx'] = { fg = p.color300 },
-
-    -- typescript
-    --['@keyword.export.typescript'] = { fg = p.color400 },
-    --['@keyword.import.typescript'] = { fg = p.color400 },
-    --['@import.identifier.typescript'] = { fg = p.color300 },
-    --typescriptVariable = { fg = p.blue2 },
-    --typescriptExport = { fg = p.teal1 },
-    --typescriptDefault = { fg = p.teal1 },
-    --typescriptConstraint = { fg = p.teal1 },
-    --typescriptBlock = { fg = p.text },
-    --typescriptIdentifierName = { fg = p.blueGray2 },
-    --typescriptTSInclude = { fg = p.teal1 },
-    --typescriptCastKeyword = { fg = p.blueGray2 },
-    --typescriptEnum = { fg = p.blue4 },
-    --typescriptTypeCast = { fg = p.blueGray2 },
-    --typescriptParenExp = { fg = p.blueGray2 },
-    --typescriptObjectType = { fg = p.blueGray1 },
-
     -- lua
     luaTSConstructor = { fg = p.blueGray1 },
 
@@ -247,10 +224,6 @@ function M.get(config)
     LspReferenceText = { fg = p.color100, bg = p.color500 },
     LspReferenceRead = { fg = p.color100, bg = p.color500 },
     LspReferenceWrite = { fg = p.color800, bg = p.primary },
-
-    -- lsp-highlight-codelens
-    --LspCodeLens = { fg = p.blueGray1 },          -- virtual text of code lens
-    --LspCodeLensSeparator = { fg = p.blueGray3 }, -- separator between two or more code lens
 
     -- lewis6991/gitsigns.nvim
     GitSignsAdd = { fg = groups.git_add },
@@ -373,11 +346,6 @@ function M.get(config)
     DiagnosticInfoBorder = { link = 'DiagnosticInfo' },
     DiagnosticPos = { fg = p.blueGray2 },
     DiagnosticWord = { fg = p.white },
-    -- Call Hierachry
-    --CallHierarchyNormal = { link = 'SagaNormal' },
-    --CallHierarchyBorder = { link = 'SagaBorder' },
-    --CallHierarchyIcon = { fg = p.pink2 },
-    --CallHierarchyTitle = { fg = p.pink2 },
     -- lightbulb
     LspSagaLightBulb = { link = 'DiagnosticSignHint' },
     -- shadow

@@ -22,7 +22,6 @@ local variants = {
     none = 'NONE',
 
     -- new theme
-    --color100 = '#FAFAFA',
     color100 = '#EEE5E9',
     color200 = '#D4D4D4',
     color300 = '#A9A9A9',
@@ -31,10 +30,8 @@ local variants = {
     color600 = '#303030',
     color700 = '#151515',
     color800 = '#0b080d',
-    --primary = '#FFBE89',
     primary = '#c9f38d',
     success = '#7EAB8E',
-    --warning = '#FFF2AF',
     warning = '#FFC300',
     error = '#F57A7A'
   },
